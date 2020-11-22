@@ -1,0 +1,442 @@
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<link href="static/style.css" rel="stylesheet" type="text/css" />
+	<title>IEEE Software Requirements Specification Template</title>
+</head>
+
+<body>
+	<div class="calibre" id="calibre_link-0">
+		<p class="block_"></p>
+		<p class="block_1">Software Requirements Specification</p>
+		<p class="block_2">for</p>
+		<p class="block_1">Bash Quiz App</p>
+		<p class="block_3">Version 1.0 approved</p>
+		<p class="block_3">Prepared by Group 1</p>
+		<p class="block_3">BASH</p>
+		<p class="block_3">22<sup class="calibre1">nd</sup> November, 2020</p>
+		<p class="block_4">&nbsp;</p>
+		<p id="calibre_link-1" class="block_5">Table of Contents</p>
+		<p class="block_6"><span id="calibre_link-2" class="calibre2"></span><b class="calibre3">Table of Contents<span
+					class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></b><b class="calibre3">ii</b></p>
+		<p class="block_6"><b class="calibre3">Revision History<span
+					class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></b><b class="calibre3">ii</b></p>
+		<p class="block_6"><b class="calibre3">1.<span
+					class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="#1">Introduction</a></b><b class="calibre3"><span
+					class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></b><b class="calibre3">1</b></p>
+		<p class="block_7">1.1<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Purpose<span
+				class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>1</p>
+		<p class="block_7">1.2<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Document Conventions<span
+				class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>1</p>
+		<p class="block_7">1.3<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Intended Audience and Reading
+			Suggestions<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>1</p>
+		<p class="block_7">1.4<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Product Scope<span
+				class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>1</p>
+		<p class="block_7">1.5<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>References<span
+				class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>1</p>
+		<p class="block_6"><b class="calibre3">2.<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="#2">Overall
+				Description</a></b><b class="calibre3"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></b><b
+				class="calibre3">1</b></p>
+		<p class="block_7">2.1<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Product Perspective<span
+				class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>1</p>
+		<p class="block_7">2.2<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Product Functions<span
+				class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>2</p>
+		<p class="block_7">2.3<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>User Classes and
+			Characteristics<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>2</p>
+		<p class="block_7">2.4<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Operating Environment<span
+				class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>2</p>
+		<p class="block_7">2.5<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Design and Implementation
+			Constraints<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>2</p>
+		<p class="block_7">2.6<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>User Documentation<span
+				class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>2</p>
+		<p class="block_7">2.7<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Assumptions and
+			Dependencies<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>3</p>
+		<p class="block_6"><b class="calibre3">3.<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="#3">External
+				Interface Requirements</a></b><b class="calibre3"><span
+					class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></b><b class="calibre3">3</b></p>
+		<p class="block_7">3.1<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>User Interfaces<span
+				class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>3</p>
+		<p class="block_7">3.2<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Hardware Interfaces<span
+				class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>3</p>
+		<p class="block_7">3.3<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Software Interfaces<span
+				class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>3</p>
+		<p class="block_7">3.4<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Communications
+			Interfaces<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>3</p>
+		<p class="block_6"><b class="calibre3">4.<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="#4">System
+				Features</a></b><b class="calibre3"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></b><b
+				class="calibre3">3</b></p>
+		<p class="block_7">4.1<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>System Feature 1<span
+				class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b class="calibre3">Error! Bookmark not
+				defined.</b></p>
+		<p class="block_7">4.2<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>System Feature 2 (and so
+			on)<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><b class="calibre3">Error! Bookmark not
+				defined.</b></p>
+		<p class="block_6"><b class="calibre3">5.<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="#5">Other
+				Nonfunctional Requirements</a></b><b class="calibre3"><span
+					class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></b><b class="calibre3">5</b></p>
+		<p class="block_7">5.1<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Performance Requirements<span
+				class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>5</p>
+		<p class="block_7">5.2<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Safety Requirements<span
+				class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>5</p>
+		<p class="block_7">5.3<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Security Requirements<span
+				class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>5</p>
+		<p class="block_7">5.4<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Software Quality
+			Attributes<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>6</p>
+		<p class="block_7">5.5<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Business Rules<span
+				class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>6</p>
+		<p class="block_6"><b class="calibre3">6.<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="#6">Other
+				Requirements</a></b><b class="calibre3"><span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></b><b
+				class="calibre3">5</b></p>
+		<p class="block_6"><b class="calibre3">Appendix A: Glossary<span
+					class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></b><b class="calibre3">6</b></p>
+		<p class="block_6"><b class="calibre3">Appendix B: Analysis Models<span
+					class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></b><b class="calibre3">6</b></p>
+		<p class="block_6"><b class="calibre3">Appendix C: To Be Determined List<span
+					class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></b><b class="calibre3">6</b></p>
+		<p class="block_8"></p>
+		<p class="block_9">&nbsp;</p>
+		<p id="calibre_link-3" class="block_10">Revision History</p>
+		<table class="table_">
+			<tbody class="calibre4">
+				<tr class="calibre5">
+					<td class="td_">
+						<p class="block_11">Name</p>
+					</td>
+					<td class="td_1">
+						<p class="block_11">Date</p>
+					</td>
+					<td class="td_2">
+						<p class="block_11">Reason For Changes</p>
+					</td>
+					<td class="td_3">
+						<p class="block_11">Version</p>
+					</td>
+				</tr>
+				<tr class="calibre5">
+					<td class="td_4">
+						<p class="block_12">&nbsp;</p>
+					</td>
+					<td class="td_5">
+						<p class="block_12">&nbsp;</p>
+					</td>
+					<td class="td_6">
+						<p class="block_12">&nbsp;</p>
+					</td>
+					<td class="td_7">
+						<p class="block_12">&nbsp;</p>
+					</td>
+				</tr>
+				<tr class="calibre5">
+					<td class="td_8">
+						<p class="block_12">&nbsp;</p>
+					</td>
+					<td class="td_9">
+						<p class="block_12">&nbsp;</p>
+					</td>
+					<td class="td_10">
+						<p class="block_12">&nbsp;</p>
+					</td>
+					<td class="td_11">
+						<p class="block_12">&nbsp;</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<p class="block_9">&nbsp;</p>
+		<p class="block_9">&nbsp;</p>
+		<p class="block_9">&nbsp;</p>
+		<ol class="list_">
+			<li id="1" id="calibre_link-4" class="block_13"><b class="calibre3">Introduction</b></li>
+		</ol>
+		<div class="calibre6">
+			<div id="calibre_link-5" class="block_14">1.1&nbsp;<b class="calibre3">Purpose </b></div>
+		</div>
+		<p class="block_15">Due to Covid19 we cannot go to university for classes. So, we need to do our academic work
+			online. The purpose our app is to take quiz and other exams in a more untroubled way, to lessen the
+			difficulties in online and to ensure the fairness of the exam and to track the grades and questions of
+			exams.</p>
+		<div class="calibre6">
+			<div id="calibre_link-6" class="block_14">1.2&nbsp;<b class="calibre3">Document Conventions</b></div>
+		</div>
+		<p class="block_15">Throughout this document, the following conventions have been used: -</p>
+		<p class="block_15">Font: - Times New Roman</p>
+		<p class="block_15">Size 18 for Main Headings</p>
+		<p class="block_15">Size 14 for Sub Headings</p>
+		<p class="block_15">Size 12 for the rest of the document</p>
+		<p class="block_9">&nbsp;</p>
+		<div class="calibre6">
+			<div id="calibre_link-7" class="block_14">1.3&nbsp;<b class="calibre3">Intended Audience and Reading
+					Suggestions</b></div>
+		</div>
+		<p class="block_15">Our targeted consumers are educational institute or other groups who teaches and want to
+			evaluate their teachings. Simple English and knowledge of UML diagram is required to understand srs.</p>
+		<div class="calibre6">
+			<div id="calibre_link-8" class="block_14">1.4&nbsp;<b class="calibre3">Product Scope</b></div>
+		</div>
+		<p class="block_15">Purpose- The main purpose of the app is to make fairness of exams and taking attendance
+			using face recognition and checking plagiarism with google reverse check.</p>
+		<p class="block_15">Business strategy- Every educational institutes can use our app to take online exams with
+			serenit<span class="calibre7">y. In future we can upgrade this app and there’ll be premium version(paid)
+				with new features. </span><span class="calibre7"> </span></p>
+		<p class="block_15">Corporate goals- Faculty don’t have to take attendance manually and he/she doesn’t need to
+			check plagiarisms.</p>
+		<p class="block_9">&nbsp;</p>
+		<h2 id="calibre_link-9" class="block_16">1.5 References</h2>
+		<p id="calibre_link-10" class="block_15">There are similarities in quiz section of our app with google form. <a
+				href="https://www.google.com/forms/" class="text_">https://www.google.com/forms/</a></p>
+		<p class="block_15">Our app’s dash board is a bit alike to google classroom’s dash board. <a
+				href="https://classroom.google.com/u/0/h" class="text_">Classes (google.com)</a></p>
+		<ol class="list_">
+			<li value="2" class="block_17" id="2" id="calibre_link-11"><b class="calibre3">Overall Description</b></li>
+		</ol>
+		<div class="calibre6">
+			<div id="calibre_link-12" class="block_14">2.1&nbsp;<b class="calibre3">Product Perspective</b></div>
+		</div>
+		<ul class="list_1">
+			<li class="block_18">Our app is new self-contend product.</li>
+			<li class="block_18">The app is to provide better environment for taking exams online.</li>
+			<li class="block_18">Student attendance is automated so faculty doesn’t have to take manually</li>
+			<li class="block_18">Our app is a standalone system</li>
+		</ul>
+		<p class="block_9">&nbsp;</p>
+		<div class="calibre6">
+			<div id="calibre_link-13" class="block_14">2.2&nbsp;<b class="calibre3">Product Functions</b></div>
+		</div>
+		<ul class="list_1">
+			<li class="block_18">Automated attendance using camera</li>
+			<li class="block_18">Plagiarism checker</li>
+			<li class="block_18">Auto closing session if student leaves the tab</li>
+			<li class="block_18">Uploaded document auto converts into image file.</li>
+		</ul>
+		<p class="block_9">&nbsp;</p>
+		<div class="calibre6">
+			<div id="calibre_link-14" class="block_14">2.3&nbsp;<b class="calibre3">User Classes and Characteristics</b>
+			</div>
+		</div>
+		<p class="block_15">There will be two type of user in our app-</p>
+		<ul class="list_1">
+			<li class="block_18">Teacher</li>
+			<li class="block_18">Student</li>
+		</ul>
+		<p class="block_19">&nbsp;</p>
+		<p class="block_15">Signup- To register an account to access the app.</p>
+		<p class="block_15">Login- To sign into the app and use it</p>
+		<p class="block_15">Logout- To sign-out from the app</p>
+		<p class="block_15">CreateQuiz- To create questions (Teacher)</p>
+		<p class="block_15">UploadQuiz- To upload questions that will appear in front of students in the app(teacher)
+		</p>
+		<p class="block_15">DraftQuiz- To save incomplete questions(teacher)</p>
+		<p class="block_15">GradeQuiz- To grade the answers that student submitted.</p>
+		<p class="block_15">SelectSections- To select specific course section</p>
+		<p class="block_15">ArchiveQuiz- Where quiz history will be saved</p>
+		<p class="block_15">StartQuiz- To start giving exam(student)</p>
+		<p class="block_15">SubmitQuiz- To submit answers(Student)</p>
+		<p class="block_15">ViewResults- To see grades (student)</p>
+		<p class="block_9">&nbsp;</p>
+		<p class="block_9">&nbsp;</p>
+		<div class="calibre6">
+			<div id="calibre_link-15" class="block_14">2.4&nbsp;<b class="calibre3">Operating Environment</b></div>
+		</div>
+		<p class="block_15">Our software is web-based. It will run on a x32 or x64 bit architecture microprocessor,
+			minimum ram needed is 4gb. It will acquire the computers audio and video components to access information.
+			Our Android app will run from OS Lollipop version.</p>
+		<div class="calibre6">
+			<div id="calibre_link-16" class="block_14">2.5&nbsp;<b class="calibre3">Design and Implementation
+					Constraints</b></div>
+		</div>
+		<p class="block_15">Our developers will be maintaining the delivered software. Developers cannot use platform
+			independent language for developing the software.</p>
+		<div class="calibre6">
+			<div id="calibre_link-17" class="block_14">2.6&nbsp;<b class="calibre3">User Documentation</b></div>
+		</div>
+		<p class="block_15">A online help page will be provided along with the software when it will be delivered for
+			the user to operate the software.</p>
+		<div class="calibre6">
+			<div id="calibre_link-18" class="block_14">2.7&nbsp;<b class="calibre3">Assumptions and Dependencies</b>
+			</div>
+		</div>
+		<p class="block_15">Our software will 3rd party components for attendance taking, converting the teacher
+			uploaded (questions) files to image, plagiarism check via google.</p>
+		<ol class="list_">
+			<li id="calibre_link-19" value="3" id="3" class="block_17"><b class="calibre3">External Interface Requirements</b>
+			</li>
+		</ol>
+		<div class="calibre6">
+			<div id="calibre_link-20" class="block_14">3.1&nbsp;<b class="calibre3">User Interfaces</b></div>
+		</div>
+		<p class="block_15">The user interface is easy to understand and use. A manual will be provided for the user.
+			Here are some mock-up GUI designs for the software -<a href="static/Mockupdesign.html">Mockup Designs</a></p>
+			
+		<div class="calibre6">
+			<div id="calibre_link-21" class="block_14">3.2&nbsp;<b class="calibre3">Hardware Interfaces</b></div>
+		</div>
+		<p class="block_15">Our product is web software it will run on every computer OS. Software will use camera,
+			audio and user’s information for log in and out and registration. The mobile version of our software will
+			only be available Android Lollipop version OS. It will use the phones camera, audio, OS features to run
+			properly.</p>
+		<div class="calibre6">
+			<div id="calibre_link-22" class="block_14">3.3&nbsp;<b class="calibre3">Software Interfaces</b></div>
+		</div>
+		<p class="block_15">Django frame-work's libraries will be used to make the data flow between the database and
+			UI. Some information of the user will pre-exist in our database. User logs in and out in the software data
+			will communicate between the UI and database. 3rd party API'S will be then used for required actions in the
+			software and will pass the data for validation and submission. If the requirements are matched user will be
+			shown the next UI. Our Android version will work in a similar way. We will use the Katlin’s libraries for
+			data manipulation. Data's will be shared with 3rd party components.</p>
+		<div class="calibre6">
+			<div id="calibre_link-23" class="block_14">3.4&nbsp;<b class="calibre3">Communications Interfaces</b></div>
+		</div>
+		<p class="block_15">The software(system) will use e-mail for communicating with users for notifying and quires.
+			FTP will be used in our software for uploading files. </p>
+		<ol class="list_">
+			<li id="4" id="calibre_link-24" value="4" class="block_17"><b class="calibre3">System Features</b></li>
+		</ol>
+		<p class="block_15">Our software's features explained by the combination of use case, UML and feature hierarchy.
+			Attendance will be automated; teachers will take quiz and the answer will be checked for plagiarism. It will
+			have a separate class of its. Fairness of the exam will be handled with session handling and questions in
+			image form.</p>
+		<p class="block_9">&nbsp;</p>
+		<div class="calibre6">
+			<div class="block_14" id="calibre_link-25">4.1&nbsp;<b class="calibre3">System Feature "Attendance"</b>
+			</div>
+		</div>
+		<p class="block_15">Using face recognition, we will take attendance of the students. We can make sure that the
+			student is taking the exam and no one else.</p>
+		<p class="block_20">4.1.1<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Description and Priority
+		</p>
+		<p class="block_21">A 3rd party component will be used to take the attendance of the students. They have open
+			their camera to give attendance this will ensure that the same student who signed up for the course is
+			taking the exam. If it’s not the same student then a e-mail will be sent to the teacher about this. This
+			feature will help the teacher not to take the attendance manually (Rate 9).</p>
+		<p class="block_20">4.1.2<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Stimulus/Response
+			Sequences</p>
+		<p class="block_22">Students will click the quiz link and will the redirected to a quiz taking page. Where they
+			click on their right answer and submit it for grading to the teacher.</p>
+		<p class="block_23">&nbsp;</p>
+		<p class="block_20">4.1.3<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Functional
+			Requirements<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+		<p class="block_24">REQ-1: Students have to have camera for attendance. If the same students is not present then
+			a e-mail will be sent to the teacher, or if there are some technical errors it will redirect to the page
+			again.</p>
+		<div class="calibre6">
+			<div class="block_14" id="calibre_link-26">4.2&nbsp;<b class="calibre3">System Feature "plagiarism"</b>
+			</div>
+		</div>
+		<p class="block_15">Students written answers will be checked in google for maximum similar copy.</p>
+		<p class="block_9">&nbsp;</p>
+		<p class="block_20">4.2.1<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Description and Priority
+		</p>
+		<p class="block_21">It’s to make sure the fairness in the exam. Teacher can evaluate how much the students are
+			understanding.</p>
+		<p class="block_20">4.2.2<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Stimulus/Response
+			Sequences</p>
+		<p class="block_22">After the paper is submitted to system will check it in google and report to the teacher.
+		</p>
+		<p class="block_23">&nbsp;</p>
+		<p class="block_20">4.2.3<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Functional
+			Requirements<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+		<p class="block_24"><span class="text_1">REQ-1: Written quiz has to be taken by the students to check for
+				plagiarism. If plagiarism is found teacher will be shown that</span><span class="text_2">.</span></p>
+		<div class="calibre6">
+			<div class="block_14" id="calibre_link-27">4.3&nbsp;<b class="calibre3">System Feature " Stopping SS"</b>
+			</div>
+		</div>
+		<p class="block_15">To stop taking ss a session will start. if a student changes from quiz tab to other tab the
+			quiz session will stop and teacher will get e-mail.</p>
+		<p class="block_9">&nbsp;</p>
+		<p id="calibre_link-28" class="block_20">4.3.1<span
+				class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Description and Priority</p>
+		<p class="block_21">Exam fairness is main priority student must stay in the quiz tab while taking the quiz. if
+			he changes tab, he will take to login page and teacher will get e-mail.</p>
+		<p id="calibre_link-29" class="block_20">4.3.2<span
+				class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Stimulus/Response Sequences</p>
+		<p class="block_22">If a student changes the quiz tab. He/She will be taken to login page.</p>
+		<p class="block_23">&nbsp;</p>
+		<p class="block_20">4.3.3<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Functional
+			Requirements<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+		<p class="block_25"><span class="text_1">REQ-1: If the quiz tab is changed. Student will be redirected to login
+				page</span><span class="text_2">.</span></p>
+		<div class="calibre6">
+			<div class="block_14" id="calibre_link-30">4.4&nbsp;<b class="calibre3">System Feature " Stopping
+					crtl+v(copy paste)"</b></div>
+		</div>
+		<p class="block_26">Teachers uploaded docx or pdf file will be converted to image file by a 3rd party component.
+			Its to have fairness in the exam.</p>
+		<p class="block_9">&nbsp;</p>
+		<p class="block_20">4.4.1<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Description and Priority
+		</p>
+		<p class="block_21">Students will no longer be able to copy the text and check it in google for answers. </p>
+		<p class="block_20">4.4.2<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Stimulus/Response
+			Sequences</p>
+		<p class="block_22">Teacher upload the file for quiz it will be shown to the students as an image file.</p>
+		<p class="block_23">&nbsp;</p>
+		<p class="block_20">4.4.3<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Functional
+			Requirements<span class="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+		<p class="block_27">When the teacher uploads a docx or pdf file it will be converted into an image file.</p>
+		<p class="block_28">&nbsp;</p>
+		<p class="block_28">&nbsp;</p>
+		<p class="block_9">&nbsp;</p>
+		<ol class="list_">
+			<li  id="5" id="calibre_link-31" value="5" class="block_29"><b class="calibre3">Other Nonfunctional Requirements</b>
+			</li>
+		</ol>
+		<div class="calibre6">
+			<div id="calibre_link-32" class="block_30">5.1&nbsp;<b class="calibre3">Performance Requirements</b></div>
+		</div>
+		<p class="block_26">For a better performance the user must have an uninterrupted and good internet connection.
+			To use this app web cam or a camera source is required. A clear and better resolution camera will work well
+			for face recognition. Students have to type their answers in the quiz form and just press the option
+			‘Submit’ to submit the answer therefore there is no hassle of uploading any image or answer file.</p>
+		<div class="calibre6">
+			<div id="calibre_link-33" class="block_30">5.2&nbsp;<b class="calibre3">Safety Requirements</b></div>
+		</div>
+		<p class="block_26">A problem that can be faced by the students is that if there is a sudden internet or
+			electricity failure </p>
+		<p class="block_26">Then the student would not be able to take the quiz as the quiz window would be closed which
+			is a loss for the students and can hamper their grades.</p>
+		<p class="block_31">&nbsp;</p>
+		<p class="block_26">To be determine later for more safety issues if found.</p>
+		<p class="block_31">&nbsp;</p>
+		<div class="calibre6">
+			<div id="calibre_link-34" class="block_30">5.3&nbsp;<b class="calibre3">Security Requirements</b></div>
+		</div>
+		<p class="block_26">There is login authentication. The user name, email and password would be unique for every
+			user.</p>
+		<p class="block_26">If any of the information doesn’t match while a user is trying to login the system would
+			notify the user by saying ‘Your password is incorrect’ or ‘Your user name is incorrect’.</p>
+		<p class="block_26"><span class="calibre7"> </span></p>
+		<div class="calibre6">
+			<div id="calibre_link-35" class="block_30">5.4&nbsp;<b class="calibre3">Software Quality Attributes</b>
+			</div>
+		</div>
+		<p class="block_26">To be determined later.</p>
+		<div class="calibre6">
+			<div id="calibre_link-36" class="block_30">5.5&nbsp;<b class="calibre3">Business Rules</b></div>
+		</div>
+		<p class="block_26">Not applicable.</p>
+		<ol class="list_">
+			<li  id="6" value="6" class="block_17" id="calibre_link-37"><b class="calibre3">Other Requirements</b></li>
+		</ol>
+		<p id="calibre_link-38" class="block_26">Not applicable</p>
+		<p class="block_10">Appendix A: Glossary</p>
+		<p id="calibre_link-39" class="block_32">There are still some features that we can be added but we need to find
+			out the functionality and how much it will affect our software is still to be determined.</p>
+		<p class="block_10">Appendix B: Analysis Models</p>
+		<p id="calibre_link-40" class="block_33"><span class="text_2">Class diagrams, UML diagram, or
+				entity-relationship diagrams. use case, expanded use case are To Be Determined later</span><span
+				class="text_3">.</span></p>
+		<p class="block_34">Appendix C: To Be Determined List</p>
+		<ul class="list_1">
+			<li class="block_35">Security requirement </li>
+			<li class="block_35">Software quality attributes </li>
+			<li class="block_35">Appendix B</li>
+		</ul>
+		<p class="block_36">&nbsp;</p>
+		<p class="block_9">&nbsp;</p>
+
+	</div>
+
+</body>
+
+</html>
